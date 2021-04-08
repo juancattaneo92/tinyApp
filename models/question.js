@@ -20,9 +20,8 @@ const QuestionSchema = Schema({
       type: Boolean,
       default: false 
     },
-  },
-  {
-    timestamps: true,
-})
+  }, {
+      timestamps: true,
+  })
 
-module.exports = Question = moongose.model('Question', QuestionSchema)
+module.exports = Question = mongoose.model('Question', QuestionSchema)

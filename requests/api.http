@@ -1,0 +1,26 @@
+### Create a question
+POST http://127.0.0.1:5000/api/questions
+Content-Type: application/json
+
+{
+  "name": "Juan Carlos",
+  "text": "this is a note",
+  "repo": "repo",
+  "live": "live"
+}
+
+### View questions
+GET http://127.0.0.1:5000/api/questions
+Content-Type: application/json
+
+### Update/Edit questions => after /api/questions/ ID goes here
+Patch  http://127.0.0.1:5000/api/questions
+Content-Type: application/json
+
+{
+  "answered": "true"
+}
+
+### Delete questions  => after /api/questions/ ID goes here
+DELETE http://127.0.0.1:5000/api/questions
+Content-Type: application/json
